@@ -2,17 +2,17 @@ package com.logica.clases;
 
 import Interface.Calculadora;
 
-public class Suma implements Calculadora {
-    double A;
-    double B;
+public class Potencia implements Calculadora{
+    int A;
+    int B;
 
-    public Suma(double A, double B) {
+    public Potencia(int A, int B) {
         this.A = A;
         this.B = B;
     }
 
     @Override
     public double operacion() {
-        return A + B;
+        return Math.pow(A, B);
     }
 }
